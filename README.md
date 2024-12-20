@@ -1,0 +1,3 @@
+# Case-Sensitive String Comparison Bug in Tcl
+
+This repository demonstrates a common, yet subtle, bug in Tcl related to case-sensitive string comparison. The `badproc` procedure in `bug.tcl` uses `==` for comparison, which is case-sensitive. This can lead to unexpected results when comparing strings that differ only in case.  The solution, shown in `bugSolution.tcl`, uses `string equal` for case-insensitive comparisons.
